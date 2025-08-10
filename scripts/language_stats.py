@@ -51,11 +51,11 @@ if repos != []:
         input_string += f"{lang} --- {perc}%\n"
 
 
-    with open("README.md", "r") as file:
+    with open("./README.md", "r") as file:
         readme = file.read()
 
     updated = readme.replace("<!--START_SECTION:languages-->", input_string)
 
 
-    with open("README.md", "w") as file:
+    with open("./README.md", "w") as file:
         file.write(updated)
