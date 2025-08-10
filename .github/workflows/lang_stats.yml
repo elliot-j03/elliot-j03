@@ -37,7 +37,7 @@ jobs:
                 if git stash list | grep -q "stash before pull"; then
                 git stash pop
                 fi
-                git add -A
+                git add .
                 if git diff --quiet; then
                     echo "No changes to commit."
                 else
