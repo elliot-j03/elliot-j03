@@ -2,7 +2,6 @@
 
 
 <!--START_SECTION:languages-->
-loading...
 <!--END_SECTION:languages-->
 
 
