@@ -44,16 +44,18 @@ if repos != []:
     for lang in lang_totals:
         bc = lang_totals[lang]
         lang_perc[lang] = round((bc/total) * 100, 1)
+    sorted_lp = dict(sorted(lang_perc.items(), key=lambda item: item[1], reverse=True))
     
-    input_string = "Languages used:\n"
-    for lang, perc in lang_perc.items():
+    input_string = "<!--START_SECTION:languages-->\nLanguages used:\n"
+    for lang, perc in sorted_lp.items():
         input_string += f"{lang} --- {perc}%\n"
 
 
     with open("README.md", "r") as file:
         readme = file.read()
 
-    updated = readme.replace("<!--LANG_STATS_SECTION-->", input_string)
+    updated = readme.replace("<!--START_SECTION:languages-->", input_string)
+
 
     with open("README.md", "w") as file:
         file.write(updated)
