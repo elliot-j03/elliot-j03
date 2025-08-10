@@ -37,9 +37,10 @@ jobs:
                 if git stash list | grep -q "stash before pull"; then
                 git stash pop
                 fi
+                git add -A
                 if git diff --quiet; then
                     echo "No changes to commit."
                 else
-                    git commit -am "Automated report"
+                    git commit -m "Automated report"
                     git push
                 fi
