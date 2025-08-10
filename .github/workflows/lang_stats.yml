@@ -24,7 +24,7 @@ jobs:
             - name: Run update script
               env: 
                 GH_TOKEN: ${{ secrets.GH_LANG_TOKEN }}
-              run: python scripts/update_readme.py
+              run: python scripts/language_stats.py
 
             - name: Push README.md changes
               run: |
