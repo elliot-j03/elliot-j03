@@ -30,10 +30,16 @@ jobs:
               run: |
                 git config --local user.email "actions@github.com"
                 git config --local user.name "github-actions"
+                if ! git diff --quiet; then
+                    git stash push -u -m "stash before pull"
+                fi
+                git pull --rebase
+                if git stash list | grep -q "stash before pull"; then
+                git stash pop
+                fi
                 if git diff --quiet; then
                     echo "No changes to commit."
                 else
                     git commit -am "Automated report"
-                    git pull --rebase
                     git push
                 fi
