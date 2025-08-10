@@ -1,0 +1,39 @@
+name: Language Statistics
+
+on:
+    schedule:
+        - cron: "0 0 * * 1"
+    workflow_dispatch:
+
+jobs:
+    update-readme:
+        runs-on: ubuntu-latest
+        
+        steps:
+            - name: Checkout repo
+              uses: actions/checkout@v3
+
+            - name: Set up Python
+              uses: actions/setup-python@v5
+              with:
+                python-version: 3.13
+
+            - name: Install dependencies
+              run: pip install requests
+
+            - name: Run update script
+              env: 
+                GH_TOKEN: ${{ secrets.GH_LANG_TOKEN }}
+              run: python scripts/update_readme.py
+
+            - name: Push README.md changes
+              run: |
+                git config --local user.email "actions@github.com"
+                git config --local user.name "github-actions"
+                git pull --rebase
+                if git diff --quiet; then
+                    echo "No changes to commit."
+                else
+                    git commit -am "Automated report"
+                    git push
+                fi
