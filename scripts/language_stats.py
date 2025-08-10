@@ -19,7 +19,7 @@ while True:
 
     data = response.json()
 
-    if response.status_code != 200:
+    if response.status_code != 200 or len(data) == 0:
         break
     repos.extend(data)
     page += 1
