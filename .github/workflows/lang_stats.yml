@@ -32,7 +32,7 @@ jobs:
                 git config --local user.name "github-actions"
                 git diff
                 git status
-                git add .
+                git add README.md
                 if git diff --quiet; then
                     echo "No changes to commit."
                 else
