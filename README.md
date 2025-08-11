@@ -2,6 +2,13 @@
 
 
 <!--START_SECTION:languages-->
+Languages used:
+R --- 44.7%
+Python --- 27.1%
+JavaScript --- 23.9%
+CSS --- 3.9%
+HTML --- 0.3%
+
 <!--END_SECTION:languages-->
 
 
