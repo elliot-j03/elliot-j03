@@ -1,13 +1,13 @@
 ## Hello
 
 
-<!--START_SECTION:languages-->
-Languages used:
-R --- 44.7%
-Python --- 27.1%
-JavaScript --- 23.9%
-CSS --- 3.9%
-HTML --- 0.3%
+<!--START_SECTION:languages--><!--START_SECTION:languages-->
+Languages used:<br>
+R --- 44.7%<br>
+Python --- 27.2%<br>
+JavaScript --- 23.9%<br>
+CSS --- 3.9%<br>
+HTML --- 0.3%<br>
 
 <!--END_SECTION:languages-->
 
