@@ -10,6 +10,9 @@ env:
 
 jobs:
     update-readme:
+        permissions:
+          contents: write
+            
         runs-on: ubuntu-latest
         
         steps:
