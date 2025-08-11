@@ -31,8 +31,14 @@ jobs:
                 git config --local user.email "actions@github.com"
                 git config --local user.name "github-actions"
                 git diff
+                echo "pre add"
                 git status
-                git add README.md
+                git add .
+                echo "Ignored"
+                git status --ignored
+                echo "not ignored"
+                git status
+                echo "diff"
                 if git diff --quiet; then
                     echo "No changes to commit."
                 else
