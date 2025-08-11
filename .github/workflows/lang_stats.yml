@@ -28,11 +28,21 @@ jobs:
 
             - name: Push README.md changes
               run: |
-                git status
-                git add .
+                git config --local user.email "actions@github.com"
+                git config --local user.name "github-actions"
                 git diff
-                git config --global user.email "github-actions-bot@andrew6rant.github.io"
-                git config --global user.name "Andrew6rant/GitHub-Actions-Bot"
-                git commit -m "Updated README" -a || echo "No changes to commit"
-                git pull
-                git push origin main
+                echo "pre add status"
+                git status
+                git add -f README.md
+                echo "post add ignored"
+                git status --ignored
+                echo "post add not ignored"
+                git status
+                echo "diff"
+                if git diff; then
+                    git commit -m "Automated report"
+                    git pull
+                    git push;
+                else
+                    echo "No changes to commit.";
+                fi
