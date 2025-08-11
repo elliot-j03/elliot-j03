@@ -48,14 +48,21 @@ if repos != []:
     
     input_string = "<!--START_SECTION:languages-->\nLanguages used:\n"
     for lang, perc in sorted_lp.items():
-        input_string += f"{lang} --- {perc}%\n"
+        input_string += f"{lang} --- {perc}%<br>\n"
 
 
     with open("./README.md", "r") as file:
         readme = file.read()
 
-    updated = readme.replace("<!--START_SECTION:languages-->", input_string)
+    start_string = "<!--START_SECTION:languages-->"
+    end_string = "<!--END_SECTION:languages-->"
 
+    start_idx = readme.index(start_string) + len(start_string)
+    end_idx = readme.index(end_string)
+
+    updated_readme = readme[:start_idx] + input_string + readme[(end_idx - 1):]
 
     with open("./README.md", "w") as file:
-        file.write(updated)
+        file.write(updated_readme)
+
+        
