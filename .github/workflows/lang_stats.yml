@@ -23,7 +23,7 @@ jobs:
 
             - name: Run update script
               env: 
-                GH_TOKEN: ${{ secrets.GH_LANG_TOKEN }}
+                GH_TOKEN: ${{ secrets.GH_TOKEN }}
               run: python scripts/language_stats.py
 
             - name: Push README.md changes
@@ -34,15 +34,8 @@ jobs:
                 echo "pre add status"
                 git status
                 git add -f README.md
-                echo "post add ignored"
-                git status --ignored
-                echo "post add not ignored"
+                echo "post add"
                 git status
                 echo "diff"
-                if git diff; then
-                    git commit -m "Automated report"
-                    git pull
-                    git push;
-                else
-                    echo "No changes to commit.";
-                fi
+                if git diff --quiet; then echo "No changes to commit.";
+                else git commit -m "Automated report" git pull git push origin main; fi
