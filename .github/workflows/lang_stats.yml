@@ -33,7 +33,7 @@ jobs:
                 git diff
                 echo "pre add"
                 git status
-                git -f add README.md
+                git add -f README.md
                 echo "Ignored"
                 git status --ignored
                 echo "not ignored"
