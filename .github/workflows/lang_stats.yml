@@ -38,4 +38,7 @@ jobs:
                 git status
                 echo "commit if different"
                 if git diff --staged --quiet; then echo "No changes to commit.";
-                else git commit -m "Automated report" git pull git push origin main; fi
+                else git commit -m "Automated report" 
+                  git pull 
+                  git push origin main; 
+                fi
