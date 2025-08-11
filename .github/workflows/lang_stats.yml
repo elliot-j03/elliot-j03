@@ -33,9 +33,9 @@ jobs:
                 git diff
                 echo "pre add status"
                 git status
-                git add -f README.md
+                git add .
                 echo "post add"
                 git status
-                echo "diff"
-                if git diff --quiet; then echo "No changes to commit.";
+                echo "commit if different"
+                if git diff --staged --quiet; then echo "No changes to commit.";
                 else git commit -m "Automated report" git pull git push origin main; fi
