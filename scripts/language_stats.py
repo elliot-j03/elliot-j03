@@ -46,7 +46,7 @@ if repos != []:
         lang_perc[lang] = round((bc/total) * 100, 1)
     sorted_lp = dict(sorted(lang_perc.items(), key=lambda item: item[1], reverse=True))
     
-    input_string = "<!--START_SECTION:languages-->\nLanguages used:<br>\n"
+    input_string = "Languages used:<br>\n"
     for lang, perc in sorted_lp.items():
         input_string += f"{lang} --- {perc}%<br>\n"
 
