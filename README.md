@@ -3,7 +3,7 @@
 Aspiring Software Developer<br>
 Studied Marine Biology at the University of Southampton, England<br>
 --------------------------------------------------------------------------<br>
-<!--START_SECTION:languages--><!--START_SECTION:languages-->
+<!--START_SECTION:languages-->
 Languages used:<br>
 R --- 44.7%<br>
 Python --- 27.2%<br>
