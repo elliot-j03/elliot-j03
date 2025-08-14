@@ -47,10 +47,14 @@ if repos != []:
     sorted_lp = dict(sorted(lang_perc.items(), key=lambda item: item[1], reverse=True))
     
     input_string: str = "\n### Top 5 Languages used:<br>\n"
+    lang_count: int = 0
     for lang, perc in sorted_lp.items():
+        if lang_count == 5:
+            break
         bar_length: int = round((perc/4))
         empty_length: int = round((100/4 - bar_length))
         input_string += f"**{lang}**<br>\n{"█" * bar_length}{"░" * empty_length} - {perc}%<br>\n"
+        lang_count += 1
 
 
     with open("./README.md", "r") as file:
