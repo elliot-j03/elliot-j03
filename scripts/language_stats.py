@@ -49,7 +49,7 @@ if repos != []:
     input_string: str = "Languages used:<br>\n"
     for lang, perc in sorted_lp.items():
         bar_length: int = round(perc/5) * 5
-        empty_length:int = total - bar_length
+        empty_length:int = 100 - bar_length
         input_string += f"{lang} - {"█" * bar_length}{"░" * empty_length} {perc}%<br>\n"
 
 
