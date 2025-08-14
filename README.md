@@ -3,12 +3,18 @@
 Aspiring Software Developer<br>
 Studied Marine Biology at the University of Southampton, England<br>
 --------------------------------------------------------------------------<br>
-<!--START_SECTION:languages-->Top 5 Languages used:<br>
-[R] ███████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 42.9%<br>
-[JavaScript] ████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 26.8%<br>
-[Python] ████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 26.2%<br>
-[CSS] ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 3.8%<br>
-[HTML] ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 0.3%<br>
+<!--START_SECTION:languages-->
+### Top 5 Languages used:<br>
+**R**<br>
+███████████████░░░░░░░░░░ - 42.9%<br>
+**JavaScript**<br>
+████████░░░░░░░░░░░░░░░░░ - 26.8%<br>
+**Python**<br>
+████████░░░░░░░░░░░░░░░░░ - 26.2%<br>
+**CSS**<br>
+██░░░░░░░░░░░░░░░░░░░░░░░ - 3.8%<br>
+**HTML**<br>
+░░░░░░░░░░░░░░░░░░░░░░░░░ - 0.3%<br>
 
 <!--END_SECTION:languages-->
 
