@@ -46,11 +46,11 @@ if repos != []:
         lang_perc[lang] = round((bc/total) * 100, 1)
     sorted_lp = dict(sorted(lang_perc.items(), key=lambda item: item[1], reverse=True))
     
-    input_string: str = "Languages used:<br>\n"
+    input_string: str = "Top 5 Languages used:<br>\n"
     for lang, perc in sorted_lp.items():
-        bar_length: int = round(perc/5) * 5
-        empty_length:int = 100 - bar_length
-        input_string += f"{lang} - {"█" * bar_length}{"░" * empty_length} {perc}%<br>\n"
+        bar_length: int = round((round(perc/5) * 5)/3)
+        empty_length:int = round((100 - bar_length)/3)
+        input_string += f"[{lang}] {"█" * bar_length}{"░" * empty_length} {perc}%<br>\n"
 
 
     with open("./README.md", "r") as file:
@@ -66,4 +66,3 @@ if repos != []:
 
     with open("./README.md", "w") as file:
         file.write(updated_readme)
-
