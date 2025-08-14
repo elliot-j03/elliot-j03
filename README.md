@@ -1,8 +1,13 @@
-# Hello
+# Welcome to my profile!
+## 😎 About Me
+I'm an aspiring Software Developer that has a passion for coding a problem solving. I found a love for developing while studying Marine Biology at the University 
+of Southampton, England, when I used R for scientific purposes. Since then, i've moved on to other languages and spend my time solving coding problems and making projects using tools
+that are essential in modern day software development.
 
-Aspiring Software Developer<br>
-Studied Marine Biology at the University of Southampton, England<br>
---------------------------------------------------------------------------<br>
+## 💻 My GitHub
+<!--START_SECTION:github-stats-->
+Currently, I have **7** repositories with a total of **136** contributions
+<!--END_SECTION:github-stats-->
 <!--START_SECTION:languages-->
 ### Top 5 Languages used:<br>
 **R**<br>
@@ -32,5 +37,3 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
