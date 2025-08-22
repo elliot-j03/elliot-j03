@@ -6,7 +6,7 @@ that are essential in modern day software development.
 
 ## My GitHub
 <!--START_SECTION:github-stats-->
-Currently, I have **7** repositories with a total of **136** contributions
+
 <!--END_SECTION:github-stats-->
 <!--START_SECTION:languages-->
 ### Top 5 Languages used:<br>
