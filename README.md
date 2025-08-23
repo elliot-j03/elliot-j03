@@ -11,11 +11,11 @@ that are essential in modern day software development.
 <!--START_SECTION:languages-->
 ### Top 5 Languages used:<br>
 **R**<br>
-███████████░░░░░░░░░░░░░░ - 42.9%<br>
+██████████░░░░░░░░░░░░░░░ - 41.6%<br>
 **JavaScript**<br>
-███████░░░░░░░░░░░░░░░░░░ - 26.8%<br>
+███████░░░░░░░░░░░░░░░░░░ - 28.9%<br>
 **Python**<br>
-███████░░░░░░░░░░░░░░░░░░ - 26.2%<br>
+██████░░░░░░░░░░░░░░░░░░░ - 25.4%<br>
 **CSS**<br>
 █░░░░░░░░░░░░░░░░░░░░░░░░ - 3.8%<br>
 **HTML**<br>
