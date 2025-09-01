@@ -1,13 +1,9 @@
 # Welcome to my profile!
 ## About Me
-I'm an aspiring Software Developer that has a passion for coding a problem solving. I found a love for developing while studying Marine Biology at the University 
+I'm an aspiring Software Developer that has a passion for coding and problem solving. I found a love for developing while studying Marine Biology at the University 
 of Southampton, England, when I used R for scientific purposes. Since then, i've moved on to other languages and spend my time solving coding problems and making projects using tools
-that are essential in modern day software development.
-
+that are essential in modern day software development.<br>
 ## My GitHub
-<!--START_SECTION:github-stats-->
-
-<!--END_SECTION:github-stats-->
 <!--START_SECTION:languages-->
 ### Top 5 Languages used:<br>
 **R**<br>
