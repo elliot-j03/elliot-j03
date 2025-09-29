@@ -7,11 +7,11 @@ that are essential in modern day software development.<br>
 <!--START_SECTION:languages-->
 ### Top 5 Languages used:<br>
 **JavaScript**<br>
-████████░░░░░░░░░░░░░░░░░ - 33.7%<br>
+█████████░░░░░░░░░░░░░░░░ - 34.1%<br>
 **R**<br>
-████████░░░░░░░░░░░░░░░░░ - 33.5%<br>
+████████░░░░░░░░░░░░░░░░░ - 33.0%<br>
 **Python**<br>
-██████░░░░░░░░░░░░░░░░░░░ - 26.0%<br>
+███████░░░░░░░░░░░░░░░░░░ - 26.2%<br>
 **CSS**<br>
 █░░░░░░░░░░░░░░░░░░░░░░░░ - 4.0%<br>
 **C#**<br>
